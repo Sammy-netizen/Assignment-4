@@ -1,0 +1,87 @@
+<html>
+
+<head>
+    <title>Book a trip</title>
+    <link href="Styles/Stylesheet.css" rel="Stylesheet" type="text/css">
+</head>
+
+<body>
+    <nav>
+        <ul>
+            <li> <a href="Home.html"> Home </a></li>
+            <li> <a href="TimeTravelTips.html"> Time Travel Tips </a></li>
+            <li> <a href="BookATrip.html"> Book a Trip </a></li>
+            <li> <a href="TravelerStories.html"> Traveller Stories </a></li>
+        </ul>
+    </nav>
+    <header>
+        <h1>
+            The beginning of everlasting memories!<span id="book-trip">book your trip here.</span>
+        </h1>
+    </header>
+
+    <section id="book-trip-main-section">
+
+        <form id="booking-form" action="mailto:sammyratxomana@gmail.com">
+
+            <table id="first-four-items">
+                <tr>
+                    <td>
+                        <label for="travellerName">Traveller name: </label>
+                        <input type="text" name="travellerName">
+                    </td>
+
+                    <td>
+                        <label for="numberOfTravellers">Number of travellers: </label>
+                        <input type="number" name="numberOfTravellers" min="1" max="4">
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>
+                        <label for="lengthOfStay">Length of stay (in local days): </label>
+                        <input type="number" name="lengthOfStay" min="1" max="365">
+                    </td>
+
+                    <td>
+                        <label for="destination-era">Choose your destination era: </label>
+                        <select name="destination-era">
+                            <option>Ancient Egypt (1350 BCE) </option>
+                            <option>Golden Age of Piracy (1690s)</option>
+                            <option>Wild West (1870s)</option>
+                            <option>Roaring Twenties (1925)</option>
+                            <option>Cyberpunk Metropolis (2142)</option>
+                            <option>Martian Colony (2300)</option>
+                        </select>
+                        <br>
+                    </td>
+                </tr>
+            </table>
+
+            <fieldset>
+                <label>Preferred time-machine model</label>
+                <br>
+                <input type="radio" name="time-machine-model" value="delorean">Classic DeLorean – 88 mph of style
+                <br>
+                <input type="radio" name="time-machine-model" value="steampunk">Steampunk Portal – Gears, brass, and tea
+                <br>
+                <input type="radio" name="time-machine-model" value="quantum_suit">Quantum Suit – Sleek pockets dimensionally bigger on the inside
+            </fieldset>
+
+            <fieldset>
+                <label>Optional Temporal Insurance (check all that apply)</label>
+                <br>
+                <input type="checkbox" name="insurance-type" value="clone_replacement">Clone replacement (in case you spontaneously cease to exist)
+                <br>
+                <input type="checkbox" name="insurance-type" value="historical_rewind">Historical rewind (one free do-over, no questions asked)
+                <br>
+                <input type="checkbox" name="insurance-type" value="butterfly_effect">Butterfly-Effect waiver (covers minor timeline hiccups)
+            </fieldset>
+
+            <input type="submit" value="Send info"/>
+
+        </form>
+    </section>
+</body>
+
+</html>
